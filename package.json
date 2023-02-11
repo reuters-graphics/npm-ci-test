@@ -1,6 +1,6 @@
 {
   "name": "@reuters-graphics/npm-ci-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is only a test",
   "main": "dist/index.js",
   "type": "module",
