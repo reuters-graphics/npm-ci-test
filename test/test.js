@@ -18,4 +18,8 @@ describe('tests', function () {
   it('should do more different maths', function () {
     assert.equal(doDifferentMaths(4, 4), 16);
   });
+
+  it('should do max maths', function () {
+    assert.equal(doDifferentMaths(4, 8), 1);
+  });
 });
