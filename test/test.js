@@ -14,4 +14,8 @@ describe('tests', function () {
   it('should do different maths', function () {
     assert.equal(doDifferentMaths(3, 3), 9);
   });
+
+  it('should do more different maths', function () {
+    assert.equal(doDifferentMaths(4, 4), 16);
+  });
 });
