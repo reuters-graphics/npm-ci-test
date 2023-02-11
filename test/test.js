@@ -1,4 +1,4 @@
-import { doDifferentMaths, doMaths } from '../index.js';
+import { doDifferentMaths, doMaths, doMaxMaths } from '../index.js';
 
 import assert from 'assert';
 
@@ -17,5 +17,9 @@ describe('tests', function () {
 
   it('should do more different maths', function () {
     assert.equal(doDifferentMaths(4, 4), 16);
+  });
+
+  it('should do max maths', function () {
+    assert.equal(doMaxMaths(4, 8), 1);
   });
 });
