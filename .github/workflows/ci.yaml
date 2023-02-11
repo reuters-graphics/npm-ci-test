@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - id: checkout
+        name: Checkout repository
+        uses: actions/checkout@v3
+
+      - id: setup-node
+        name: Setup Node.JS
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'yarn'
+
+      - id: install-deps
+        name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - id: run-tests
+        name: Test library
+        run: yarn test

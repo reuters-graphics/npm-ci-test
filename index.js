@@ -1,0 +1,1 @@
+export const doMaths = (a, b) => a + b;
