@@ -1,5 +1,6 @@
+import { doDifferentMaths, doMaths } from '../index.js';
+
 import assert from 'assert';
-import { doMaths } from '../index.js';
 
 describe('tests', function () {
   it('should do maths', function () {
@@ -8,5 +9,9 @@ describe('tests', function () {
 
   it('should do more maths', function () {
     assert.equal(doMaths(2, 2), 4);
+  });
+
+  it('should do different maths', function () {
+    assert.equal(doDifferentMaths(3, 3), 9);
   });
 });
